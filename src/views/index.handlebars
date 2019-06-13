@@ -1,0 +1,29 @@
+<h2 id ="role" class="page-header">Dashbord for {{role}}</h2>
+<h1  id = "username" class="text-muted">Welcome {{username}}</h1>
+<br/>
+
+{{#compare role 'Customer' operator ="==" }}
+
+ <button id ="Book" onClick="onClickBook()" class="btn btn-primary btn-lg btn-block">Book Cab</button>
+{{/compare}}
+
+
+ <div id="message" >
+  
+  </div>
+
+<br>
+
+  <div id= "tripbuttons"class="btn-group mr-2" role="group" aria-label="First group">
+    <button id="notify"onClick="onClickNotify()"type="button" style="visibility: hidden;"class="btn btn-secondary">Notify Customer</button>
+    <button id="start"onClick="onClickStart()"type="button" style="visibility: hidden;"class="btn btn-secondary">Start Trip</button>
+    <button id="end"onClick="onClickEnd()"type="button"style="visibility: hidden; "class="btn btn-secondary">End Trip</button>
+    
+  </div>
+ 
+
+
+
+
+
+

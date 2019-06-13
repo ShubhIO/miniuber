@@ -1,0 +1,19 @@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Customer Name</th>
+            <th>Destination</th>
+            <th>Duration(mins)</th>            
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.customer}}</td>
+            <td>{{this.destination}}</td>
+            <td>{{this.duration}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

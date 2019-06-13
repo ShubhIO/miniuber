@@ -1,0 +1,14 @@
+{{#if role}}
+<h2 id ="role" class="page-header">LOGIN as {{role}}</h2>
+{{/if}}
+<form method="post" action="/{{role}}/login">
+  <div class="from-group">
+    <label>Username</label>
+    <input type="text" class="form-control"name="username" placeholder="Username"/>
+  </div>
+  <div class="from-group">
+    <label>Password</label>
+    <input type="password" class="form-control"name="password" placeholder="Password"/>
+  </div><br />
+  <button id ="login" onclick="socketfunction()" class="btn btn-info" type="submit">Login</button>
+</form>

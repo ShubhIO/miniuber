@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Rider Name</th>
+            <th>Car</th>
+            <th>Car Plate No.</th>
+            <th>Mobile</th>
+            <th>Duration(mins)</th>            
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.driver}}</td>
+            <td>{{this.car}}</td>
+            <td>{{this.carplate}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.duration}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
